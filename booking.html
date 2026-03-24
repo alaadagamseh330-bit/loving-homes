@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الحجز</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+text-align:center;
+}
+
+header{
+background:#c62828;
+color:white;
+padding:18px;
+font-size:24px;
+}
+
+nav{
+background:white;
+padding:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+color:#c62828;
+font-weight:bold;
+}
+
+.container{
+margin-top:20px;
+}
+
+form{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+input{
+width:80%;
+padding:10px;
+margin:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+background:#c62828;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#a51f1f;
+}
+
+.price{
+font-size:18px;
+margin-top:10px;
+font-weight:bold;
+}
+
+.info{
+background:white;
+margin:20px;
+padding:15px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+footer{
+margin-top:30px;
+background:#c62828;
+color:white;
+padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+ Loving Homes
+</header>
+
+<nav>
+<a href="index.html">الرئيسية</a>
+<a href="stay.html">الإقامة</a>
+<a href="clean.html">التنظيف</a>
+<a href="training.html">التدريب</a>
+</nav>
+
+<div class="container">
+
+<h2>نموذج الحجز</h2>
+
+<!-- 🔥 شرح الحجز (إضافة المعلمة) -->
+<div class="info">
+<p>
+يمكنك حجز الخدمة بسهولة من خلال تعبئة البيانات التالية ثم الضغط على تأكيد الحجز
+سيتم حساب السعر حسب عدد الأيام حيث أن سعر اليوم الواحد هو 25 يوان صيني
+</p>
+<p>
+بعد إرسال الطلب سيتم التواصل معك لتأكيد الحجز وضمان أفضل خدمة لكلبك
+</p>
+</div>
+
+<form>
+
+<input type="text" placeholder="اسم صاحب الكلب" required>
+
+<br>
+
+<input type="text" placeholder="نوع الكلب" required>
+
+<br>
+
+<input type="number" id="days" placeholder="عدد الأيام">
+
+<p class="price" id="total">السعر: 0 ¥</p>
+
+<button type="button" onclick="calculate()">احسب السعر</button>
+
+<br><br>
+
+<button type="button" onclick="book()">تأكيد الحجز</button>
+
+</form>
+
+</div>
+
+<footer>
+<p> الهاتف: 123456789</p>
+</footer>
+
+<script>
+
+function calculate(){
+
+let days = document.getElementById("days").value;
+
+let price = days * 25;
+
+document.getElementById("total").innerText = "السعر: " + price + " ¥";
+
+}
+
+function book(){
+
+alert("تم إرسال طلب الحجز بنجاح، سيتم التواصل معك قريباً");
+
+}
+
+</script>
+
+</body>
+</html>

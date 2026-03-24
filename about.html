@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عن الفندق</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+text-align:center;
+background:#f2f2f2;
+}
+
+/* الهيدر */
+
+header{
+background:#c62828;
+color:white;
+padding:15px;
+font-size:22px;
+font-weight:bold;
+}
+
+/* القائمة */
+
+nav{
+background:white;
+padding:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+color:#c62828;
+font-weight:bold;
+}
+
+/* الكونتينر */
+
+.container{
+padding:20px;
+}
+
+/* الكارد */
+
+.card{
+background:white;
+padding:20px;
+margin:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* الصور */
+
+.gallery img{
+width:250px;
+margin:10px;
+border-radius:10px;
+}
+
+/* النجوم */
+
+.rating span{
+font-size:40px;
+cursor:pointer;
+}
+
+/* زر */
+
+button{
+background:#c62828;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#a51f1f;
+}
+
+/* الوضع الليلي */
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .card{
+background:#1e1e1e;
+}
+
+.dark nav{
+background:#1e1e1e;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+ Loving Homes
+</header>
+
+<nav>
+<a href="index.html">الرئيسية</a>
+<a href="stay.html">الإقامة</a>
+<a href="clean.html">التنظيف</a>
+<a href="training.html">التدريب</a>
+<a href="booking.html">الحجز</a>
+<a href="about.html">عن الفندق</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>عن فندق Loving Homes</h2>
+<p>
+فندق Loving Homes هو مكان مخصص لرعاية الكلاب، يوفر بيئة آمنة ومريحة مع خدمات الإقامة والتنظيف والتدريب بإشراف فريق متخصص.
+هدفنا هو راحة الكلب وجعله يشعر وكأنه في منزله الثاني.
+</p>
+</div>
+
+<div class="card gallery">
+<h2>صور من الفندق</h2>
+
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b">
+<img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7">
+<img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a">
+
+</div>
+
+<div class="card">
+
+<h2>⭐ قيّم الموقع</h2>
+
+<div class="rating">
+
+<span onclick="rate(1)">☆</span>
+<span onclick="rate(2)">☆</span>
+<span onclick="rate(3)">☆</span>
+<span onclick="rate(4)">☆</span>
+<span onclick="rate(5)">☆</span>
+
+</div>
+
+<p id="message"></p>
+
+</div>
+
+<br>
+
+<button onclick="darkMode()">الوضع الليلي</button>
+
+</div>
+
+<footer>
+<p> الهاتف: 123456789</p>
+<p>© Loving Homes</p>
+</footer>
+
+<script>
+
+function rate(stars){
+
+let starsElements = document.querySelectorAll(".rating span");
+
+for(let i=0;i<starsElements.length;i++){
+
+if(i < stars){
+starsElements[i].innerHTML="⭐";
+}else{
+starsElements[i].innerHTML="☆";
+}
+
+}
+
+document.getElementById("message").innerText="شكراً لتقييمك ⭐";
+
+}
+
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+
+</script>
+
+</body>
+</html>
