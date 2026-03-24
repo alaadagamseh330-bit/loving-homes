@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loving Homes</title>
+
+<style>
+.about{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+text-align:center;
+}
+
+/* الهيدر */
+
+header{
+background:#c62828;
+color:white;
+padding:18px;
+font-size:24px;
+font-weight:bold;
+}
+
+/* القائمة */
+
+nav{
+background:white;
+padding:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+color:#c62828;
+font-weight:bold;
+font-size:16px;
+}
+
+/* الصورة الرئيسية */
+
+.hero img{
+width:90%;
+border-radius:12px;
+margin-top:15px;
+}
+
+/* الخدمات */
+
+.services{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:20px;
+}
+
+.card{
+background:white;
+width:85%;
+margin:12px;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* الأزرار */
+
+button{
+background:#c62828;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#a51f1f;
+}
+
+/* قسم المميزات */
+
+.features{
+margin-top:30px;
+}
+
+.feature-box{
+background:white;
+margin:10px;
+padding:15px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* الفوتر */
+
+footer{
+margin-top:30px;
+background:#c62828;
+color:white;
+padding:15px;
+}
+
+/* 🌙 الدارك مود */
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark nav{
+background:#1e1e1e;
+}
+
+.dark .card{
+background:#1e1e1e;
+color:white;
+}
+
+.dark .feature-box{
+background:#1e1e1e;
+color:white;
+}
+
+.dark .about{
+background:#1e1e1e;
+color:white;
+}
+
+.dark footer{
+background:#000;
+}
+</style>
+</head>
+
+<script>
+function showFeature(text){
+alert(text);
+}
+</script>
+
+<body>
+
+<header>
+ Loving Homes
+ <button onclick="darkMode()">DARK MODE </button>
+</header>
+
+<nav>
+<a href="index.html">الرئيسية</a>
+<a href="stay.html">الإقامة</a>
+<a href="clean.html">التنظيف</a>
+<a href="training.html">التدريب</a>
+<a href="booking.html">الحجز</a>
+<a href="about.html">عن الفندق</a>
+</nav>
+
+<div class="hero">
+<img src="https://rowadbusiness.com/post/wp-content/uploads/pexels-photo-1108099-1080x810.jpeg">
+</div>
+
+<h2>خدماتنا</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>إقامة الكلاب</h3>
+<p>مكان آمن ومريح لكلبك أثناء السفر مع متابعة مستمرة واهتمام كامل</p>
+<a href="stay.html"><button>عرض الخدمة</button></a>
+</div>
+
+<div class="card">
+<h3>تنظيف الكلاب</h3>
+<p>تنظيف احترافي باستخدام أفضل المنتجات للحفاظ على صحة الكلب ونظافته</p>
+<a href="clean.html"><button>عرض الخدمة</button></a>
+</div>
+
+<div class="card">
+<h3>تدريب الكلاب</h3>
+<p>تدريب الكلاب على الطاعة والسلوك الجيد بإشراف مدربين متخصصين</p>
+<a href="training.html"><button>عرض الخدمة</button></a>
+</div>
+
+</div>
+
+<!-- شرح الحجز -->
+
+<section class="about">
+
+<h2>آلية الحجز</h2>
+
+<p>
+يمكن للمستخدم حجز الخدمة بسهولة من خلال الانتقال إلى صفحة الحجز ثم إدخال البيانات المطلوبة مثل الاسم ورقم الهاتف واسم الكلب وتاريخ الحجز وبعد ذلك يتم إرسال الطلب ليتم مراجعته والتواصل مع المستخدم لتأكيد الحجز
+</p>
+
+<p>
+تم تصميم عملية الحجز لتكون بسيطة وسريعة بحيث لا يحتاج المستخدم إلى خطوات معقدة مما يساعد على تحسين تجربة الاستخدام داخل الموقع
+</p>
+
+</section>
+
+<div class="features">
+
+<h2>لماذا تختار Loving Homes</h2>
+
+<div class="feature-box">
+<h3>رعاية 24 ساعة</h3>
+<button onclick="showFeature('نحن نهتم بكلبك طوال اليوم مع مراقبة مستمرة واهتمام كامل')">عرض التفاصيل</button>
+</div>
+
+<div class="feature-box">
+<h3>تنظيف احترافي</h3>
+<button onclick="showFeature('نستخدم أفضل منتجات التنظيف للحفاظ على صحة ونظافة كلبك')">عرض التفاصيل</button>
+</div>
+
+<div class="feature-box">
+<h3>تدريب متخصص</h3>
+<button onclick="showFeature('مدربون محترفون يساعدون كلبك على تعلم الطاعة والسلوك الجيد')">عرض التفاصيل</button>
+</div>
+
+</div>
+
+<section class="about">
+
+<h2>عن فندق Loving Homes</h2>
+
+<p>
+فندق لوفنغ هومز هو مكان مخصص لرعاية الكلاب وتوفير بيئة آمنة ومريحة لهم أثناء سفر أصحابهم حيث نسعى إلى تقديم أفضل مستوى من الرعاية للحيوانات الأليفة من خلال فريق متخصص يهتم بصحتهم وراحتهم
+نقدم خدمات متعددة تشمل الإقامة والتنظيف والتدريب مع توفير بيئة مناسبة تساعد الكلاب على الشعور بالراحة وكأنهم في منزلهم
+</p>
+
+<p>
+هدفنا هو بناء ثقة مع العملاء وتقديم خدمات عالية الجودة تضمن سلامة الكلاب وسعادتهم طوال فترة إقامتهم داخل الفندق
+</p>
+
+</section>
+
+<footer>
+<p> الهاتف: 123456789</p>
+<p>© Loving Homes</p>
+</footer>
+
+<script>
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
